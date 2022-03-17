@@ -2,7 +2,8 @@
     --pg-bg: black;
     /* --menu-title: hsl(0, 0, 0%); */
     /* --menu-bg: hsl(0, 0, 100%); */
-    --menu-title: black;
+    --menu-title: hsl(180, 0%, 15%);
+    --menu-flipped-c: hsl(180, 0%, 60%);
     --menu-flipped: hsl(0, 0, 90%);
     --menu-bg: white;
     /* --menu-bg: yellowgreen; */
@@ -37,6 +38,7 @@ body {
     /* font-family: "Monteverde" sans-serif; */
     font-size: 12px;
     line-height: 1;
+    vertical-align: baseline;
 }
 
 
@@ -84,6 +86,7 @@ div#menu-wrapper {
 
 h1#logo-wrap {
     display: block;
+    position: relative;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -125,10 +128,10 @@ a#logo {
     /* font-variant: small-caps; */
 }
 
-#menu-flipped {
+#logo-flipped {
     display: Inline-block;
-    color: grey;
-    --trans-scale: translate(0px, -25px) scale(1, -1);
+    color: var(--menu-flipped-c);
+    --trans-scale: translate(0px, -26px) scale(1, -1);
     transform: var(--trans-scale);
     -moz-transform: var(--trans-scale);
     -webkit-transform: var(--trans-scale);
@@ -141,14 +144,84 @@ a#logo {
     /* -ms-transform: translate(0px, -25px) scale(1, -1); */
 }
 
+hr#under-logo {
+    position: absolute;
+    left: 1%;
+    width: 94%;
+    height: 0px;
+    color: var(--menu-title);
+    background-color: var(--menu-title);
+    --trans: translate(0px, -38px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
 
-/* .menu {
-    font: "Monteverde";
+#logo-sub {
+    /* width: 150px; */
+    left: 1%;
+    width: 93%;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    font-size: 10px;
+    color: hsl(0, 0%, 60%);
+    /* --trans: translate(0px, -43px); */
+    --trans: translate(0px, -10px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
+
+hr#under-logo-sub {
+    position: absolute;
+    left: 1%;
+    width: 94%;
+    height: 0px;
+    color: var(--menu-title);
+    background-color: var(--menu-title);
+    --trans: translate(0px, 11px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
+
+
+/* Menu */
+
+#menu {
+    display: block;
+    font-family: "Proxima Monteverde", sans-serif;
+    font-size: 14px;
     color: var(--menu-text);
-} */
+    margin-top: 32px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#menu-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: disc inside none;
+    list-style-type: none;
+}
 
 .menu-item {
     text-transform: uppercase;
+    line-height: 1.7;
+    text-decoration: none;
+    cursor: pointer;
+    display: list-item;
+    padding: 0.4em 0.4em 0.4em 0em;
+    /* display: table-cell; */
+    position: relative;
+    text-decoration: none;
+    padding-right: 0.2em;
 }
 
 #menu-extension {
@@ -185,4 +258,21 @@ img.background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* Transitions */
+
+h2,
+p,
+li {
+    transition: font-size ease-in-out 130ms;
+}
+
+
+/* Generics */
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
