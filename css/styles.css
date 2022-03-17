@@ -146,9 +146,10 @@ a#logo {
 
 hr#under-logo {
     position: absolute;
-    left: 1%;
-    width: 94%;
-    height: 0px;
+    left: 2%;
+    width: 92%;
+    height: 2px;
+    border: 0px;
     color: var(--menu-title);
     background-color: var(--menu-title);
     --trans: translate(0px, -38px);
@@ -161,13 +162,14 @@ hr#under-logo {
 
 #logo-sub {
     /* width: 150px; */
-    left: 1%;
+    padding-left: 2%;
     width: 93%;
     text-align: center;
+    color: var(--menu-flipped-c);
     line-height: 1.2;
     margin-bottom: 32px;
     font-size: 10px;
-    color: hsl(0, 0%, 60%);
+    /* color: hsl(0, 0%, 60%); */
     /* --trans: translate(0px, -43px); */
     --trans: translate(0px, -10px);
     transform: var(--trans);
@@ -175,13 +177,15 @@ hr#under-logo {
     -webkit-transform: var(--trans);
     -o-transform: var(--trans);
     -ms-transform: var(--trans);
+    text-transform: uppercase;
 }
 
 hr#under-logo-sub {
     position: absolute;
-    left: 1%;
-    width: 94%;
-    height: 0px;
+    left: 2%;
+    width: 92%;
+    height: 2px;
+    border: 0px;
     color: var(--menu-title);
     background-color: var(--menu-title);
     --trans: translate(0px, 11px);
