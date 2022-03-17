@@ -7,46 +7,73 @@
 }
 
 
-/* .title {
+/* Temp */
+
+body {
+    /* background-color: black; */
+    background-color: var(--menu-bg);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font: "Monteverde";
+}
+
+.title {
     color: var(--title);
 }
 
 .header {
     color: var(--header-text);
     background-color: var(--header-bg);
-} */
+}
+
+
 /* header {
     width */
+
+
 /* } */
+
+
 /* header > * {
     background-color: var(--menu-bg);
 } */
-.menu-wrapper {
-    left: 0;
-    width: 40em;
-    height: 100%;
-    
-    background-color: var(--menu-bg);
-}
-.menu {
+
+header {
     font: "Monteverde";
+    font-size: 60;
     color: var(--menu-text);
 }
+
+div.menu-wrapper {
+    position: fixed;
+    left: 0;
+    padding-top: 25em;
+    font-size: 600;
+    width: 40em;
+    height: 100%;
+    background-color: green;
+    /* background-color: var(--menu-bg); */
+}
+
+
+/* .menu {
+    font: "Monteverde";
+    color: var(--menu-text);
+} */
+
 #menu-item {
     text-transform: uppercase;
 }
 
+
 /* Menu Bar Extension */
+
 .menu-extension {
-    top: 0; 
+    position: fixed;
+    top: 0;
     height: 25em;
-    width: 100%;    
-
-    background-color: var(--menu-bg);
-}
-
-/* Temp */
-body {
-    /* background-color: black; */
-    background-color: var(--menu-title);
+    width: 100%;
+    background-color: red;
+    /* background-color: var(--menu-bg); */
 }
