@@ -1,59 +1,121 @@
 :root {
+    --pg-bg: black;
     /* --menu-title: hsl(0, 0, 0%); */
     /* --menu-bg: hsl(0, 0, 100%); */
     --menu-title: black;
     --menu-bg: white;
+    /* --menu-bg: yellowgreen; */
     --menu-text: hsl(0, 0, 90%);
+    /* --menu-width: 21.3em; */
+    --menu-width: 23%;
+    /* <- good value! */
+    --menu-ext-height: 4%;
+    /* <- good value! */
+}
+
+html {
+    overflow-y: auto;
+    display: block;
+}
+
+html,
+body {
+    /* Dimensions */
+    height: 100%;
+    width: 100%;
+    vertical-align: baseline;
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* Colors */
+    background-color: var(-pg-bg);
+    /* Font */
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: "Monteverde" sans-serif; */
+    font-size: 12px;
+    line-height: 1;
 }
 
 
 /* Temp */
 
-body {
-    /* background-color: black; */
-    background-color: var(--menu-bg);
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    font: "Monteverde";
-}
-
-.title {
+#title {
     color: var(--title);
 }
 
-.header {
-    color: var(--header-text);
-    background-color: var(--header-bg);
-}
-
-
-/* header {
-    width */
-
-
-/* } */
-
-
-/* header > * {
-    background-color: var(--menu-bg);
-} */
-
 header {
-    font: "Monteverde";
-    font-size: 60;
+    /* Positioning */
+    display: block;
+    position: fixed;
+    float: left;
+    left: 0;
+    top: 0;
+    /* Sizeing */
+    height: 100%;
+    width: var(--menu-width);
+    max-width: 217px;
+    /* padding-top: var(--menu-ext-height); */
+    /* Borders */
+    padding: 4% 1% 0 3%;
+    margin-right: 2%;
+    border-right: 1px solid var(--menu-bg);
+    /* Colors */
     color: var(--menu-text);
+    background-color: var(--menu-bg);
+    font-family: "Proxima Nova Light", sans-serif;
 }
 
-div.menu-wrapper {
-    position: fixed;
-    left: 0;
-    padding-top: 25em;
+div#menu-wrapper {
+    display: block;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    /* position: absolute; */
+    top: 4%;
+    left: 4%;
     font-size: 600;
-    width: 40em;
+    width: 100%;
     height: 100%;
-    background-color: green;
-    /* background-color: var(--menu-bg); */
+    /* background-color: green; */
+    background-color: var(--menu-bg);
+}
+
+h1#logo-wrap {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Proxima Nova Light", "Monteverde", sans-serif;
+    font-size: 15px;
+}
+
+a {
+    outline: 0;
+}
+
+
+/* @import url("https://github.com/dw5/Metropolis/blob/master/Fonts/TrueType/Metropolis-Light.ttf?raw=true"); */
+
+
+/* https://github.com/dw5/Metropolis/tree/master/Fonts */
+
+@font-face {
+    font-family: "Proxima Monteverde";
+    /* src: url("https://github.com/dw5/Metropolis/blob/master/Fonts/TrueType/Metropolis-Light.ttf?raw=true"); */
+    src: url(/fonts/metropolis/Metropolis-Light.ttf);
+    /* src: url(/fonts/ufonts.com_monteverdi.ttf); */
+}
+
+a#logo {
+    font-family: "Proxima Monteverde", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--menu-title);
+    text-decoration: none;
+    margin-bottom: 32px;
+    max-width: 100%;
+    display: block;
 }
 
 
@@ -62,18 +124,15 @@ div.menu-wrapper {
     color: var(--menu-text);
 } */
 
-#menu-item {
+.menu-item {
     text-transform: uppercase;
 }
 
-
-/* Menu Bar Extension */
-
-.menu-extension {
+#menu-extension {
     position: fixed;
     top: 0;
-    height: 25em;
+    height: 4%;
     width: 100%;
-    background-color: red;
-    /* background-color: var(--menu-bg); */
+    /* background-color: red; */
+    background-color: var(--menu-bg);
 }
