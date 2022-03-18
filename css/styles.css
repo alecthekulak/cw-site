@@ -14,8 +14,8 @@
     --menu-ext-height: 4%;
     /* <- good value! */
 }
-
-@import './fonts/fonts.css';
+@import url('./fonts/fonts.css');
+/* @import './fonts/fonts.css'; */
 html {
     /* overflow-y: auto; */
     display: block;

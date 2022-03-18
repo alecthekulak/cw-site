@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Avenir Black";
-    src: url(/fonts/avenir_ff/AvenirLTStd-Black.otf);
+    src: url(/css/fonts/avenir_ff/AvenirLTStd-Black.otf);
 }
 
 @font-face {
     font-family: "Avenir Book";
-    src: url(/fonts/avenir_ff/AvenirLTStd-Book.otf);
+    src: url(/css/fonts/avenir_ff/AvenirLTStd-Book.otf);
 }
 
 @font-face {
     font-family: "Avenir Roman";
-    src: url(/fonts/avenir_ff/AvenirLTStd-Roman.otf);
+    src: url(/css/fonts/avenir_ff/AvenirLTStd-Roman.otf);
 }
 
 
@@ -25,6 +25,6 @@
 @font-face {
     font-family: "Proxima Monteverde";
     /* src: url("https://github.com/dw5/Metropolis/blob/master/Fonts/TrueType/Metropolis-Light.ttf?raw=true"); */
-    src: url(/fonts/metropolis/Metropolis-ExtraLight.ttf);
+    src: url(/css/fonts/metropolis/Metropolis-ExtraLight.ttf);
     /* src: url(/fonts/ufonts.com_monteverdi.ttf); */
 }
