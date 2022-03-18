@@ -16,7 +16,7 @@
 }
 
 html {
-    overflow-y: auto;
+    /* overflow-y: auto; */
     display: block;
 }
 
@@ -34,11 +34,13 @@ body {
     /* Colors */
     background-color: var(-pg-bg);
     /* Font */
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
     /* font-family: "Monteverde" sans-serif; */
     font-size: 12px;
     line-height: 1;
     vertical-align: baseline;
+    /* font-family: "Proxima Monteverde", sans-serif; */
+    font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
 }
 
 
@@ -67,7 +69,6 @@ header {
     /* Colors */
     color: var(--menu-text);
     background-color: var(--menu-bg);
-    font-family: "Proxima Nova Light", sans-serif;
 }
 
 div#menu-wrapper {
@@ -91,12 +92,26 @@ h1#logo-wrap {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-family: "Proxima Nova Light", "Monteverde", sans-serif;
     font-size: 15px;
 }
 
 a {
     outline: 0;
+}
+
+@font-face {
+    font-family: "Avenir Black";
+    src: url(/fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: "Avenir Book";
+    src: url(/fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Avenir Roman";
+    src: url(/fonts/avenir_ff/AvenirLTStd-Roman.otf);
 }
 
 
@@ -116,7 +131,7 @@ a {
 }
 
 a#logo {
-    font-family: "Proxima Monteverde", sans-serif;
+    text-align: center;
     font-size: 46px;
     /* font-weight: bold; */
     color: var(--menu-title);
@@ -126,6 +141,18 @@ a#logo {
     display: block;
     text-transform: uppercase;
     /* font-variant: small-caps; */
+    font-family: "Avenir Black", "Proxima Monteverde", sans-serif;
+}
+
+#logo-line2 {
+    display: Inline-block;
+    color: var(--menu-title);
+    --trans-scale: translate(1px, -20px);
+    transform: var(--trans-scale);
+    -moz-transform: var(--trans-scale);
+    -webkit-transform: var(--trans-scale);
+    -o-transform: var(--trans-scale);
+    -ms-transform: var(--trans-scale);
 }
 
 #logo-flipped {
@@ -137,22 +164,20 @@ a#logo {
     -webkit-transform: var(--trans-scale);
     -o-transform: var(--trans-scale);
     -ms-transform: var(--trans-scale);
-    /* transform: translate(0px, -25px) scale(1, -1); */
-    /* -moz-transform: translate(0px, -25px) scale(1, -1); */
-    /* -webkit-transform: translate(0px, -25px) scale(1, -1); */
-    /* -o-transform: translate(0px, -25px) scale(1, -1); */
-    /* -ms-transform: translate(0px, -25px) scale(1, -1); */
 }
 
 hr#under-logo {
     position: absolute;
-    left: 2%;
-    width: 92%;
+    text-align: center;
+    /* left: 2%; width: 92%; */
+    left: 11%;
+    right: 11%;
     height: 2px;
     border: 0px;
     color: var(--menu-title);
     background-color: var(--menu-title);
-    --trans: translate(0px, -38px);
+    --trans: translate(0px, -53px);
+    /* --trans: translate(0px, -38px); */
     transform: var(--trans);
     -moz-transform: var(--trans);
     -webkit-transform: var(--trans);
@@ -162,8 +187,9 @@ hr#under-logo {
 
 #logo-sub {
     /* width: 150px; */
-    padding-left: 2%;
-    width: 93%;
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
+    /* padding-left: 2%; */
+    /* width: 93%;  */
     text-align: center;
     color: var(--menu-flipped-c);
     line-height: 1.2;
@@ -171,7 +197,7 @@ hr#under-logo {
     font-size: 10px;
     /* color: hsl(0, 0%, 60%); */
     /* --trans: translate(0px, -43px); */
-    --trans: translate(0px, -10px);
+    --trans: translate(0px, -31px);
     transform: var(--trans);
     -moz-transform: var(--trans);
     -webkit-transform: var(--trans);
@@ -199,13 +225,20 @@ hr#under-logo-sub {
 
 /* Menu */
 
-#menu {
+nav#menu {
     display: block;
-    font-family: "Proxima Monteverde", sans-serif;
     font-size: 14px;
     color: var(--menu-text);
-    margin-top: 32px;
+    margin-top: 0px;
+    margin-left: 61px;
+    /* margin-top: 32px; */
     -webkit-font-smoothing: antialiased;
+    --trans: translate(0px, -30px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
 }
 
 #menu-list {
@@ -217,7 +250,8 @@ hr#under-logo-sub {
 
 .menu-item {
     text-transform: uppercase;
-    line-height: 1.7;
+    /* line-height: 1.7; */
+    line-height: 2;
     text-decoration: none;
     cursor: pointer;
     display: list-item;
