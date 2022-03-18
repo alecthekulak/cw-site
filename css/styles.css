@@ -171,7 +171,7 @@ hr#under-logo {
     text-align: center;
     /* left: 2%; width: 92%; */
     left: 11%;
-    right: 11%;
+    right: 9%;
     height: 2px;
     border: 0px;
     color: var(--menu-title);
@@ -230,10 +230,10 @@ nav#menu {
     font-size: 14px;
     color: var(--menu-text);
     margin-top: 0px;
-    margin-left: 36px;
+    margin-left: 30px;
     /* margin-top: 32px; */
     -webkit-font-smoothing: antialiased;
-    --trans: translate(0px, -30px);
+    --trans: translate(0px, -36px);
     transform: var(--trans);
     -moz-transform: var(--trans);
     -webkit-transform: var(--trans);
