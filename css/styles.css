@@ -230,7 +230,7 @@ nav#menu {
     font-size: 14px;
     color: var(--menu-text);
     margin-top: 0px;
-    margin-left: 61px;
+    margin-left: 36px;
     /* margin-top: 32px; */
     -webkit-font-smoothing: antialiased;
     --trans: translate(0px, -30px);
