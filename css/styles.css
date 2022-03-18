@@ -1,5 +1,6 @@
+@import '/css/control.css';
+@import '/fonts/fonts.css';
 :root {
-    --pg-bg: black;
     /* --menu-title: hsl(0, 0, 0%); */
     /* --menu-bg: hsl(0, 0, 100%); */
     --menu-title: hsl(180, 0%, 15%);
@@ -14,32 +15,29 @@
     --menu-ext-height: 4%;
     /* <- good value! */
 }
-@import url('./fonts/fonts.css');
-/* @import './fonts/fonts.css'; */
-html {
+html { 
     /* overflow-y: auto; */
     display: block;
-}
-
+ }
 html,
 body {
     /* Dimensions */
     height: 100%;
     width: 100%;
-    vertical-align: baseline;
+    display: block;
+    /* vertical-align: baseline; */
     overflow: hidden;
     /* Box Model */
     padding: 0;
     margin: 0;
     border: 0;
     /* Colors */
-    background-color: var(-pg-bg);
+    background-color: var(--page-bg);
     /* Font */
     /* font-family: Helvetica, Arial, sans-serif; */
     /* font-family: "Monteverde" sans-serif; */
     font-size: 12px;
     line-height: 1;
-    vertical-align: baseline;
     /* font-family: "Proxima Monteverde", sans-serif; */
     font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
 }
@@ -111,7 +109,7 @@ a#logo {
     display: block;
     text-transform: uppercase;
     /* font-variant: small-caps; */
-    font-family: "Avenir Black", "Proxima Monteverde", sans-serif;
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
 }
 
 #logo-line2 {
