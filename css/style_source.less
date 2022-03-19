@@ -1,0 +1,27 @@
+/* LESS Document */
+/* Variables */ 
+@sidebar-width: 23%;
+@top-border-height: 4%;
+
+
+body {
+    background: darkslateblue;  // <- temporary, just for testing
+}
+/* Definitions */
+header, header > * {
+    position: fixed; 
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+header {
+    #sidebar {
+        background: white;
+        width: @sidebar-width;
+    }
+    #page-ceiling {
+        background: white;
+        height: @top-border-height; 
+    }
+}
