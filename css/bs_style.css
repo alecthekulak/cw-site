@@ -1,10 +1,12 @@
 @charset "utf-8";
+@import "/fonts/fonts.css";
 :root {
     --sidebar-width: 23%;
-    --roof-height: 4%;
+    --roof-height: 8%;
 }
 body {
     background: darkslateblue;
+    margin: 0px;
 }
 /* Definitions */
 header, header > * {
@@ -13,15 +15,19 @@ header, header > * {
     right: 0;
     width: 100%;
     height: 100%;
+    margin: 0px;
     background-color: none;
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
 }
-header #page-roof {
+div#page-roof {
+    position: fixed;
     background: white;
-    border: red 2px; 
     height: var(--roof-height);
 }
 header #sidebar {
+    position: fixed;
     background: white;
+    text-align: center;
     width: var(--sidebar-width);
-}#sidebar #name {
+    top: var(--roof-height);
 }
