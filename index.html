@@ -24,19 +24,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="scripts/packages/jquery-3.4.1.min.js"></script> 
+    <script src="scripts/jquery.fittext.js"></script> 
+    <script>
+        jQuery("a#name").fitText(1);
+    </script> 
+    
     <!-- Header -->
     <header>
         <div id="sidebar" >
-            <a href="/" id="name">Claudia</br>Wasielewska</a>
+            <div id="name-wrap">
+                <a href="/" id="name">Claudia <br>
+                Wasielewska</a>
+            </div>
         </div>
-        <div id="page-roof">        </div>
+        <div id="page-roof">
+        </div>
     </header>
     <!-- Main Content -->
     <div id="content">
-        Here is some content
+        Here is some content <span style="font-family: Avenir Book;"> and even more!</span>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <!--    <script src="js/jquery-3.4.1.min.js"></script> --> 
     
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <!--    <script src="js/popper.min.js"></script> --> 
