@@ -1,0 +1,290 @@
+@import '/css/control.css';
+@import '/fonts/fonts.css';
+:root {
+    /* --menu-title: hsl(0, 0, 0%); */
+    /* --menu-bg: hsl(0, 0, 100%); */
+    --menu-title: hsl(180, 0%, 15%);
+    --menu-flipped-c: hsl(180, 0%, 60%);
+    --menu-flipped: hsl(0, 0, 90%);
+    --menu-bg: white;
+    /* --menu-bg: yellowgreen; */
+    --menu-text: hsl(0, 0, 90%);
+    /* --menu-width: 21.3em; */
+    --menu-width: 23%;
+    /* <- good value! */
+    --menu-ext-height: 4%;
+    /* <- good value! */
+}
+html { 
+    /* overflow-y: auto; */
+    display: block;
+ }
+html,
+body {
+    /* Dimensions */
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* vertical-align: baseline; */
+    overflow: hidden;
+    /* Box Model */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* Colors */
+    background-color: var(--page-bg);
+    /* Font */
+    /* font-family: Helvetica, Arial, sans-serif; */
+    /* font-family: "Monteverde" sans-serif; */
+    font-size: 12px;
+    line-height: 1;
+    /* font-family: "Proxima Monteverde", sans-serif; */
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
+}
+
+
+/* Temp */
+
+#title {
+    color: var(--title);
+}
+
+header, header * {
+    width: 100%; 
+    height: 100%;
+    display: none;
+}
+
+div#header {
+    /* Positioning */
+    display: block;
+    position: fixed;
+    float: left;
+    left: 0;
+    top: 0;
+    /* Sizeing */
+    height: 100%;
+    width: var(--menu-width);
+    max-width: 217px;
+    /* padding-top: var(--menu-ext-height); */
+    /* Borders */
+    padding: 4% 1% 0 3%;
+    margin-right: 2%;
+    border-right: 1px solid var(--menu-bg);
+    /* Colors */
+    color: var(--menu-text);
+    background-color: var(--menu-bg);
+}
+
+div#menu-wrapper {
+    display: block;
+    padding-right: 25px;
+    padding-bottom: 60px;
+    /* position: absolute; */
+    top: 4%;
+    left: 4%;
+    font-size: 600;
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    background-color: var(--menu-bg);
+}
+
+h1#logo-wrap {
+    display: block;
+    position: relative;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 15px;
+}
+
+a {
+    outline: 0;
+}
+
+a#logo {
+    text-align: center;
+    font-size: 46px;
+    /* font-weight: bold; */
+    color: var(--menu-title);
+    text-decoration: none;
+    margin-bottom: 32px;
+    max-width: 100%;
+    display: block;
+    text-transform: uppercase;
+    /* font-variant: small-caps; */
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
+}
+
+#logo-line2 {
+    display: Inline-block;
+    color: var(--menu-title);
+    --trans-scale: translate(1px, -20px);
+    transform: var(--trans-scale);
+    -moz-transform: var(--trans-scale);
+    -webkit-transform: var(--trans-scale);
+    -o-transform: var(--trans-scale);
+    -ms-transform: var(--trans-scale);
+}
+
+#logo-flipped {
+    display: Inline-block;
+    color: var(--menu-flipped-c);
+    --trans-scale: translate(0px, -26px) scale(1, -1);
+    transform: var(--trans-scale);
+    -moz-transform: var(--trans-scale);
+    -webkit-transform: var(--trans-scale);
+    -o-transform: var(--trans-scale);
+    -ms-transform: var(--trans-scale);
+}
+
+hr#under-logo {
+    position: absolute;
+    text-align: center;
+    /* left: 2%; width: 92%; */
+    left: 11%;
+    right: 9%;
+    height: 2px;
+    border: 0px;
+    color: var(--menu-title);
+    background-color: var(--menu-title);
+    --trans: translate(0px, -53px);
+    /* --trans: translate(0px, -38px); */
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
+
+#logo-sub {
+    /* width: 150px; */
+    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
+    /* padding-left: 2%; */
+    /* width: 93%;  */
+    text-align: center;
+    color: var(--menu-flipped-c);
+    line-height: 1.2;
+    margin-bottom: 32px;
+    font-size: 10px;
+    /* color: hsl(0, 0%, 60%); */
+    /* --trans: translate(0px, -43px); */
+    --trans: translate(0px, -31px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+    text-transform: uppercase;
+}
+
+hr#under-logo-sub {
+    position: absolute;
+    left: 2%;
+    width: 92%;
+    height: 2px;
+    border: 0px;
+    color: var(--menu-title);
+    background-color: var(--menu-title);
+    --trans: translate(0px, 11px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
+
+
+/* Menu */
+
+nav#menu {
+    display: block;
+    font-size: 14px;
+    color: var(--menu-text);
+    margin-top: 0px;
+    margin-left: 25px;
+    /* margin-top: 32px; */
+    -webkit-font-smoothing: antialiased;
+    --trans: translate(0px, -36px);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+}
+
+#menu-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: disc inside none;
+    list-style-type: none;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    /* line-height: 1.7; */
+    line-height: 2;
+    text-decoration: none;
+    cursor: pointer;
+    display: list-item;
+    padding: 0.4em 0.4em 0.4em 0em;
+    /* display: table-cell; */
+    position: relative;
+    text-decoration: none;
+    padding-right: 0.2em;
+}
+
+#menu-extension {
+    position: fixed;
+    top: 0;
+    height: 4%;
+    width: 100%;
+    /* background-color: red; */
+    background-color: var(--menu-bg);
+}
+
+
+/* Content */
+
+div#content {
+    display: block;
+    float: left;
+    margin-left: var(--menu-width);
+    margin-top: var(--menu-ext-height);
+    margin-right: 1%;
+    background-color: black;
+    /* margin: 4% 1% 0 0; */
+    /* width: calc(100vw - 380px); */
+    width: calc(100% - 1% - var(--menu-width));
+    max-width: calc(100% - 1% - 217px);
+    /* width: 100%; */
+    height: 100%;
+    text-align: center;
+}
+
+img.background-image {
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Transitions */
+
+h2,
+p,
+li {
+    transition: font-size ease-in-out 130ms;
+}
+
+
+/* Generics */
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
