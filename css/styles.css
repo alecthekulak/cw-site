@@ -84,7 +84,7 @@ a#name-logo span#first-name {
     padding-top: 2%;
     /*    background-color: yellow;*/
     display: inline-block;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
     width: 100%;
 }
@@ -123,24 +123,49 @@ div#content {
     color: darkblue;
     font: 20px;
     background-color: pink;
-    margin: var(--roof-height) 0% 0% var(--sidebar-width);
+    top: var(--roof-height);
+    left: var(--sidebar-width);
+    /*    margin: var(--roof-height) 0% 0% var(--sidebar-width);*/
     width: calc(100% - var(--sidebar-width));
     /*    inset: var(--roof-height) 0% 0% var(--sidebar-width);*/
 }
 /* Objects */
+div.image-wrapper {
+    position: relative;
+}
 img.background-image {
+    position: relative;
+    bottom: 0px;
     display: block;
-    width: 100%;
-    position: absolute;
-    min-height: 100%;
-    top: 0; 
-    right: 0;
-    left: 0; 
+    top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: bottom;
+    overflow: hidden;
     /*
     width: auto;
     height: auto;
 */
-    object-fit: cover;
+    object-fit: contain;
+}
+img.background-image2 {
+    position: relative;
+    bottom: 0px;
+    display: block;
+    top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: bottom;
+    overflow: hidden;
+    /*
+    width: auto;
+    height: auto;
+*/
+    object-fit: contain;
 }
 /* Alterations */
 span.stretch {
