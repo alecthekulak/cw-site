@@ -147,6 +147,7 @@ img.background-image {
     position: absolute;
     object-fit: contain;
     min-width: 100%;
+    top: -440px; 
     /*    top: 0px;*/
 /*    right: 50px;*/
 /*    background-position: top right; */
