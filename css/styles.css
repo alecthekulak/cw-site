@@ -126,6 +126,16 @@ div#content {
     background-color: pink;
     inset: var(--roof-height) 0% 0% var(--sidebar-width);
 }
+
+/* Objects */ 
+img.background-image {
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Alterations */
 span.stretch {
     display: inline-block;
