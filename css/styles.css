@@ -13,23 +13,23 @@ body {
     border: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: var(--page-bg);
+    font-color:
 }
 /* Sidebar */
-header {
-}
+header {}
 header div {
-    left: 0%; 
-    right: 0%; 
+    left: 0%;
+    right: 0%;
     width: 100%;
     height: 100%;
     font-family: "Avenir Book", "Avenir Roman", "Proxima Monteverde", sans-serif;
-/*    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;*/
+    /*    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;*/
 }
 div#page-roof {
     z-index: 1;
     position: fixed;
-/*    background-color: var(--page-bg);*/
+    /*    background-color: var(--page-bg);*/
     height: var(--roof-height);
     background-color: var(--page-bg);
 }
@@ -45,43 +45,93 @@ div#sidebar {
 div#name-wrap {
     z-index: 3;
     top: 0%;
+    margin: 0% var(--logo-sides);
     width: auto;
-    margin-left: 4%;
-    margin-right: 4%;
-    min-height: 50px;
-    height: calc(1.5 * var(--roof-height));
+    height: auto;
+    /*    min-height: 60px;*/
+    /*    height: calc(1.6 * var(--roof-height));*/
     display: block;
     position: relative;
-    background-color: blue;
     text-align: center;
 }
-a#name {
+/*
+div.half-h {
+    display: block;
+    height: 50%;
     width: 100%;
-    top: 0%;
+}
+*/
+a#name-logo {
+    outline: 0;
+    width: 100%;
     text-transform: uppercase;
     z-index: 100;
-    font-size: 32px;
-/*    font-size: var(--name-width);*/
-    
+    /*    font-size: 46px;*/
+    font-size: 4vw;
+    /*    height: 50%;*/
+    color: var(--logo-color);
     text-decoration: none;
+    position: relative;
+    display: block;
+    align-content: center;
+    line-height: 75%;
+    /*    text-align: center;*/
     font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
+/*    background-color: green;*/
+    padding: 0;
+}
+a#name-logo span#first-name {
+    padding-top: 2%;
+/*    background-color: yellow;*/
+    display: inline-block;
+    letter-spacing: 3px;
+    font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
+    width: 100%;
+}
+a#name-logo span#last-name {
+    display: inline-block;
+    font-size: 3vw;
+/*    background-color: red;*/
+    width: 100%;
+    letter-spacing: -2px;
+/*    transform-origin: 0 0;*/
+    
+/*
+    --trans: scale(0.5, 1);
+    transform: var(--trans);
+    -moz-transform: var(--trans);
+    -webkit-transform: var(--trans);
+    -o-transform: var(--trans);
+    -ms-transform: var(--trans);
+*/
+/*     --trans: translate(0px, -38px); */
+
+}
+/*
+name-wrap::first-line {
+    color: red;
+}
+*/
+hr.sidebar {
+    width: 90%;
+    height: 2px;
+    color: var(--logo-color);
+    background-color: var(--logo-color);
 }
 /* Body Content */
 div#content {
     position: fixed;
-    color: darkblue; 
+    color: darkblue;
     font: 20px;
     background-color: pink;
-    
     inset: var(--roof-height) 0% 0% var(--sidebar-width);
 }
-
-
-
-
-
-
-
-
-
-
+/* Alterations */
+span.stretch {
+    display: inline-block;
+    -webkit-transform: scale(2, 1); /* Safari and Chrome */
+    -moz-transform: scale(2, 1); /* Firefox */
+    -ms-transform: scale(2, 1); /* IE 9 */
+    -o-transform: scale(2, 1); /* Opera */
+    transform: scale(2, 1); /* W3C */
+}
