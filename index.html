@@ -23,7 +23,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<script src="/scripts/fittest.js"></script>
 
 <body>
 
@@ -31,19 +30,19 @@
 <header>
     <div id="page-roof" class="page-shell"> </div>
     <div id="sidebar" class="page-shell">
-		<div id="sidebar-sections">
-        <div id="name-wrap" class=""> 
-            <!--                <div class="half-h">--> 
-            <!--                    <a href="/" id="name-1" class="name">Claudia</a>--> 
-            <!--                </div>--> 
-            <a href="/" id="name-logo"><span id="first-name">Claudia</span><br>
-            <span id="last-name">Wasielewska</span></a> 
-            <!--                <div class="half-h">--> 
-            <!--                    <a href="/" id="name-2" class="name">Wasielewska</a>--> 
-            <!--                </div>--> 
+        <div id="sidebar-sections">
+            <div id="name-wrap" class=""> 
+                <!--                <div class="half-h">--> 
+                <!--                    <a href="/" id="name-1" class="name">Claudia</a>--> 
+                <!--                </div>--> 
+                <a href="/" id="name-logo"><span id="first-name">Claudia</span><br>
+                <span id="last-name">Wasielewska</span></a> 
+                <!--                <div class="half-h">--> 
+            </div>
+            <hr class="sidebar">
+            <div id="navigation-wrap">
+            </div>
         </div>
-        <hr class="sidebar">
-		</div>
     </div>
 </header>
 <!-- Main Content -->
@@ -55,14 +54,14 @@
     <!--        style="vertical-align: top;" --> 
 </div>
 
-	
-<!-- JavaScript -->
+<!-- JavaScript --> 
+<script type="text/javascript" src="scripts/fittest.js"></script>
 <script type="text/javascript">
-	window.fitText(document.getElementById("last-name"))
+	window.fitText(document.getElementById("name-logo"), 0.7   )
 //        jQuery("#last-name").fitText(0.6);
 //        jQuery("#name-2").fitText(0.85);
-</script>
-	
+</script> 
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <!--    <script src="/scripts/packages/jquery-3.4.1.min.js"></script> --> 
 <!--

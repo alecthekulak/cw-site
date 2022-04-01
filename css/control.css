@@ -13,13 +13,14 @@
 	
     
 }
-body {
+body#fake {
 	/* For testing only */
 	/* Name / Logo */
 	--name-wrap: goldenrod;
 	--first-name: lightgreen;
 	--last-name: darkgreen;
 	--name-logo: yellow;
+    --test-outline: solid 2px grey;
 	
 	
 }
