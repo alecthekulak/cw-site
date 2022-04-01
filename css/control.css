@@ -10,5 +10,16 @@
     /* Font Colors */
     --logo-color: hsl(180, 0%, 15%);
     --menu-text: hsl(0, 0, 90%);
+	
     
+}
+body {
+	/* For testing only */
+	/* Name / Logo */
+	--name-wrap: goldenrod;
+	--first-name: lightgreen;
+	--last-name: darkgreen;
+	--name-logo: yellow;
+	
+	
 }
