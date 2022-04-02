@@ -1,6 +1,13 @@
 @charset "utf-8";
 @import "control.css";
 @import "../fonts/fonts.css";
+@import "sidebar.css";
+/* Site-Level Controls */
+/* Import Fonts */
+/* Main CSS Content */
+/* Sidebar */
+
+
 /* Global Items */
 html, body {
     overflow: hidden;
@@ -14,220 +21,19 @@ body {
     background-color: var(--page-bg);
     font-family: "Avenir Book", "Avenir Roman", "Proxima Monteverde", sans-serif;
 }
-/* Sidebar */
+
+
 /*header {}*/
 /*header div {*/
-    left: 0%;
-    right: 0%;
+/*    left: 0%;*/
+/*    right: 0%;*/
     /*  width: 100%;*/
     /*  height: 100%;*/
     /*    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;*/
-}
-div.page-shell {
-    background-color: var(--page-bg);
-    position: fixed;
-    left: 0px;
-    top: 0px;
-}
-div#page-roof {
-    z-index: 1;
-    /*    position: fixed;*/
-    /*    background-color: var(--page-bg);*/
-    height: var(--roof-height);
-    width: 100%;
-    /*    background-color: var(--page-bg);*/
-}
-/* Header */
-div#sidebar {
-    z-index: 2;
-    /*    position: fixed;*/
-    /*    overflow: hidden;*/
-    /*    background-color: var(--page-bg);*/
-    /* Positioning*/
-    padding-top: var(--roof-height);
-    height: 100%;
-    /*  bottom: 0%;*/
-    /* Sizing */
-    width: var(--sidebar-width);
-}
-div#sidebar-sections {
-    position: relative;
-    height: 100%;
-    border: var(--test-outline); /* <- for testing only */
-    margin-left: var(--logo-sides);
-    margin-right: var(--logo-sides);
-    width: auto;
-}
-div#name-wrap {
-    z-index: 3;
-    top: 0%;
-    /*	margin: 0% var(--logo-sides);*/
-    background-color: var(--name-wrap);
-    width: auto;
-    height: auto;
-    /*    min-height: 60px;*/
-    /*    height: calc(1.6 * var(--roof-height));*/
-    display: block;
-    position: relative;
-    text-align: center;
-}
-/*
-div.half-h {
-    display: block;
-    height: 50%;
-    width: 100%;
-}
-*/
-a#name-logo {
-    outline: 0;
-    width: 100%;
-    text-transform: uppercase;
-    z-index: 100;
-    /*    font-size: 46px;*/
-    font-size: 4vw;
-    /*    height: 50%;*/
-    color: var(--logo-color);
-    background-color: var(--name-logo);
-    text-decoration: none;
-    position: relative;
-    display: block;
-    align-content: center;
-    line-height: 75%;
-    /*    text-align: center;*/
-    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
-    /*    background-color: green;*/
-    padding: 0;
-}
-a#name-logo > span {
-    /* Element Setup */
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-a#name-logo span#first-name {
-    font-size: 100%;
-    padding-top: 2%;
-    background-color: var(--first-name);
-    /*    background-color: yellow;*/
-    letter-spacing: 6px;
-    font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
-    width: 100%;
-}
-a#name-logo span#last-name {
-    /* Element Setup */
-    display: inline-block;
-    background-color: var(--last-name);
-    /* Font */
-    font-size: 100%;
-    /*
-    font-size: 3vw;
-    letter-spacing: -2px;
-*/
-    /*    background-color: red;*/
-    width: 100%;
-    /*    transform-origin: 0 0;*/
-    /*
-    --trans: scale(0.5, 1);
-    transform: var(--trans);
-    -moz-transform: var(--trans);
-    -webkit-transform: var(--trans);
-    -o-transform: var(--trans);
-    -ms-transform: var(--trans);
-*/
-    /*     --trans: translate(0px, -38px); */
-}
-/*
-name-wrap::first-line {
-    color: red;
-}
-*/
-hr.sidebar {
-    width: 90%;
-    height: 2px;
-    color: var(--logo-color);
-    background-color: var(--logo-color);
-}
-/* Body Content */
-div#content {
-    position: fixed;
-    text-align: center;
-    background-color: darkblue;
-    font: 20px;
-    background-color: pink;
-    top: var(--roof-height);
-    left: var(--sidebar-width);
-    rigth: 0;
-    /*    margin: var(--roof-height) 0% 0% var(--sidebar-width);*/
-    /*    width: calc(100% - var(--sidebar-width));*/
-    /*    inset: var(--roof-height) 0% 0% var(--sidebar-width);*/
-}
-/* Objects */
-div.image-wrapper {
-    position: relative;
-    /*    object-fit: contain;*/
-    width: 100%;
-    height: 100%;
-    right: 0px;
-    bottom: 0px;
-    background-color: aqua;
-    /*    text-align: bottom;*/
-    /*    align-content: bottom;*/
-    /*    align-self: bottom;*/
-}
-img.background-image {
-    position: absolute;
-    object-fit: contain;
-    min-width: 100%;
-    top: -440px;
-    /*    top: 0px;*/
-    /*    right: 50px;*/
-    /*    background-position: top right; */
-    /*
-    background-position: top right; 
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-*/
-    /*    margin-bottom: 0;*/
-    /*    padding-bottom: 0;*/
-    /*    text-align: right;*/
-    /*    align-content: right;*/
-    /*    align-self: right;*/
-    /*
-    width: auto;
-    height: auto;
-*/
-    /*
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-*/
-    /*    vertical-align: bottom;*/
-    /*
-    width: auto;
-    height: auto;
-*/
-}
-img.background-image2 {
-    position: relative;
-    bottom: 0px;
-    display: block;
-    top: -50px;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    vertical-align: bottom;
-    overflow: hidden;
-    /*
-    width: auto;
-    height: auto;
-*/
-    object-fit: contain;
-}
+/*}*/
+
+
+
 /* Alterations */
 span.stretch {
     display: inline-block;
