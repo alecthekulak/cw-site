@@ -6,14 +6,6 @@ header > div  {
     left: 0px;
     top: 0px;
 }
-div#page-header{
-    z-index: 1;
-    /*    position: fixed;*/
-    /*    background-color: var(--page-bg);*/
-    height: var(--roof-height);
-    width: 100%;
-    /*    background-color: var(--page-bg);*/
-}
 /* Header */
 div#page-sidebar {
     z-index: 2;
@@ -21,7 +13,7 @@ div#page-sidebar {
     /*    overflow: hidden;*/
     /*    background-color: var(--page-bg);*/
     /* Positioning*/
-    padding-top: var(--roof-height);
+    padding-top: var(--sidebar-top);
     height: 100%;
     /*  bottom: 0%;*/
     /* Sizing */
@@ -34,19 +26,20 @@ div#sidebar-sections {
     margin-left: var(--logo-sides);
     margin-right: var(--logo-sides);
     width: auto;
+    text-align: center;
 }
 div#name-wrap {
     z-index: 3;
     top: 0%;
+    width: 100%;
     /*	margin: 0% var(--logo-sides);*/
     background-color: var(--name-wrap);
-    width: auto;
-    height: auto;
+/*    height: max-content;*/
     /*    min-height: 60px;*/
     /*    height: calc(1.6 * var(--roof-height));*/
     display: block;
     position: relative;
-    text-align: center;
+    font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
 }
 /*
 div.half-h {
@@ -55,9 +48,12 @@ div.half-h {
     width: 100%;
 }
 */
+a#name-logo {  /*, a#name-logo > span*/
+    /* Element Setup */
+    width: 100%;
+}
 a#name-logo {
     outline: 0;
-    width: 100%;
     text-transform: uppercase;
     z-index: 100;
     /*    font-size: 46px;*/
@@ -69,39 +65,37 @@ a#name-logo {
     position: relative;
     display: block;
     align-content: center;
-    line-height: 75%;
+/*    line-height: 75%;*/
     /*    text-align: center;*/
-    font-family: "Avenir Book", "Proxima Monteverde", sans-serif;
     /*    background-color: green;*/
     padding: 0;
 }
-a#name-logo > span {
+a#name-logo > div {
     /* Element Setup */
-    display: inline-block;
+/*    display: block;*/
     width: 100%;
-    height: 100%;
+    line-height: 1ex;
+/*    height: 100%;*/
 }
-a#name-logo span#first-name {
+a#name-logo #first-name {
     font-size: 100%;
-    padding-top: 2%;
-    background-color: var(--first-name);
-    /*    background-color: yellow;*/
-    letter-spacing: 6px;
-    font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
-    width: 100%;
+    font-size: 
+/*    padding-top: 2%;*/
+/*    background-color: var(--first-name);*/
+    background-color: yellow;
+/*    letter-spacing: 6px;*/
 }
-a#name-logo span#last-name {
+a#name-logo #last-name {
     /* Element Setup */
-    display: inline-block;
-    background-color: var(--last-name);
+    display: block;
+/*    background-color: var(--last-name);*/
+    background-color: red;
     /* Font */
-    font-size: 100%;
+/*    font-size: 100%;*/
     /*
     font-size: 3vw;
     letter-spacing: -2px;
 */
-    /*    background-color: red;*/
-    width: 100%;
     /*    transform-origin: 0 0;*/
     /*
     --trans: scale(0.5, 1);

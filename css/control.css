@@ -2,13 +2,15 @@
     --page-bg: white;
     
     /* Sidebar Settings */
-    --roof-height: 8%;
-    --sidebar-width: 23%;
+    --sidebar-width: min(max(20vw, 280px), 50vw);
+/*    --sidebar-width: clamp(50vw, 20vw, 280px);*/
+    --sidebar-top: 7vh;
     --logo-sides: 5%;
     
     
     /* Font Colors */
-    --logo-color: hsl(180, 0%, 15%);
+    --logo-color: hsl(299, 74%, 86%);
+    --logo-color-old: hsl(180, 0%, 15%);
     --menu-text: hsl(0, 0, 90%);
 	
     
