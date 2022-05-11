@@ -28,18 +28,28 @@ div#sidebar-sections {
     width: auto;
     text-align: center;
 }
+
+div#sidebar-sections a, div#sidebar-sections div {
+    width: 100%; 
+    display: block;
+}
 div#name-wrap {
     z-index: 3;
     top: 0%;
     width: 100%;
+    vertical-align: middle;
+    text-align: center;
     /*	margin: 0% var(--logo-sides);*/
     background-color: var(--name-wrap);
 /*    height: max-content;*/
     /*    min-height: 60px;*/
     /*    height: calc(1.6 * var(--roof-height));*/
-    display: block;
     position: relative;
     font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
+/*    font-size: 28px;*/
+/*    font-size: calc(var(--sidebar-width) / 8);*/
+    font-size: var(--name-size);
+/*    font-size: clamp(28px, 2.5vw, 38px);*/
 }
 /*
 div.half-h {
@@ -48,48 +58,55 @@ div.half-h {
     width: 100%;
 }
 */
-a#name-logo {  /*, a#name-logo > span*/
-    /* Element Setup */
-    width: 100%;
-}
+
 a#name-logo {
+    /* Element Setup */
+/*    width: 100%;*/
     outline: 0;
     text-transform: uppercase;
     z-index: 100;
     /*    font-size: 46px;*/
-    font-size: 4vw;
+/*    font-size: 4vw;*/
     /*    height: 50%;*/
     color: var(--logo-color);
     background-color: var(--name-logo);
     text-decoration: none;
     position: relative;
-    display: block;
+/*    display: block;*/
     align-content: center;
 /*    line-height: 75%;*/
     /*    text-align: center;*/
     /*    background-color: green;*/
     padding: 0;
+/*    height: 60px;*/
+    height: fit-content;
 }
 a#name-logo > div {
     /* Element Setup */
 /*    display: block;*/
-    width: 100%;
-    line-height: 1ex;
+/*    width: 100%;    */
+    line-height: 0.85;
+/*    height: 50%;*/
+    height: fit-content;
+    margin-left: auto; margin-right: auto; 
+    width: fit-content;
 /*    height: 100%;*/
-}
+}    
 a#name-logo #first-name {
-    font-size: 100%;
-    font-size: 
+/*    font-size: 100%;*/
 /*    padding-top: 2%;*/
 /*    background-color: var(--first-name);*/
-    background-color: yellow;
+/*    background-color: yellow;*/
+    background-color: var(--testing, yellow);
+/*    bottom: 0; */
+    font-size: 163%; 
 /*    letter-spacing: 6px;*/
 }
 a#name-logo #last-name {
     /* Element Setup */
-    display: block;
 /*    background-color: var(--last-name);*/
-    background-color: red;
+    background-color: var(--testing, red);
+    padding-left: 1px; 
     /* Font */
 /*    font-size: 100%;*/
     /*

@@ -1,12 +1,23 @@
 :root {
+    --on: initial; --off: ;
+    /* Global */
+    --testing: var(--off); 
+/*    --testing: var(--on); */
+    
+    /* Page */
     --page-bg: white;
     
+    
     /* Sidebar Settings */
-    --sidebar-width: min(max(20vw, 280px), 50vw);
+/*    --sidebar-width: min(max(20vw, 280px), 50vw);*/
 /*    --sidebar-width: clamp(50vw, 20vw, 280px);*/
+    --sidebar-width: clamp(235px, 25vw, 300px);
     --sidebar-top: 7vh;
     --logo-sides: 5%;
     
+    
+    /* Font Sizes */ 
+    --name-size: 30px;
     
     /* Font Colors */
     --logo-color: hsl(299, 74%, 86%);
