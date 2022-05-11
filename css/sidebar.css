@@ -3,8 +3,7 @@
 header > div  {
     background-color: var(--page-bg);
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0px; top: 0px;
 }
 /* Header */
 div#page-sidebar {
@@ -32,32 +31,22 @@ div#sidebar-sections {
 div#sidebar-sections a, div#sidebar-sections div {
     width: 100%; 
     display: block;
+    top: 0%;
 }
 div#name-wrap {
     z-index: 3;
-    top: 0%;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
+/*    top: 0%;*/
+/*    width: 100%;*/
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
     /*	margin: 0% var(--logo-sides);*/
     background-color: var(--name-wrap);
-/*    height: max-content;*/
-    /*    min-height: 60px;*/
-    /*    height: calc(1.6 * var(--roof-height));*/
     position: relative;
     font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
-/*    font-size: 28px;*/
 /*    font-size: calc(var(--sidebar-width) / 8);*/
     font-size: var(--name-size);
 /*    font-size: clamp(28px, 2.5vw, 38px);*/
 }
-/*
-div.half-h {
-    display: block;
-    height: 50%;
-    width: 100%;
-}
-*/
 
 a#name-logo {
     /* Element Setup */
@@ -79,7 +68,9 @@ a#name-logo {
     /*    background-color: green;*/
     padding: 0;
 /*    height: 60px;*/
-    height: fit-content;
+/*    height: fit-content;*/
+    height: 68px;
+/*    height:     */
 }
 a#name-logo > div {
     /* Element Setup */
@@ -129,9 +120,22 @@ name-wrap::first-line {
     color: red;
 }
 */
-hr.sidebar {
-    width: 90%;
-    height: 2px;
-    color: var(--logo-color);
-    background-color: var(--logo-color);
+div#sidebar-sub {
+    font-size: 80%;
+}
+hr.sidebar, div.sidebar-line {
+/*    width: 90%;*/
+/*    width: clamp();*/
+/*    width: 23vw;*/
+    margin: var(--hr-space) auto;
+    width: min(94%, 240px) !important;
+/*    height: 2px;*/
+    height: 0.1em;
+/*    height: 1px;*/
+    color: black; 
+    background-color: currentColor; 
+    border: none;
+/*    border: 1px solid curentColor;*/
+/*    color: var(--logo-color);*/
+/*    background-color: var(--logo-color);*/
 }

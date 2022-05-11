@@ -1,7 +1,7 @@
 :root {
-    --on: initial; --off: ;
+    --on: initial; --off: ; --testing: var(--off); 
     /* Global */
-    --testing: var(--off); 
+    
 /*    --testing: var(--on); */
     
     /* Page */
@@ -11,9 +11,11 @@
     /* Sidebar Settings */
 /*    --sidebar-width: min(max(20vw, 280px), 50vw);*/
 /*    --sidebar-width: clamp(50vw, 20vw, 280px);*/
-    --sidebar-width: clamp(235px, 25vw, 300px);
-    --sidebar-top: 7vh;
+/*    --sidebar-width: clamp(235px, 25vw, 300px);*/
+    --sidebar-width: clamp(240px, 25vw, 300px);
+    --sidebar-top: 7vh; /* 7vh */
     --logo-sides: 5%;
+    --hr-space: 12px;
     
     
     /* Font Sizes */ 
