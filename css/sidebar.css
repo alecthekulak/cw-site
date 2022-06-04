@@ -45,6 +45,8 @@ div#name-wrap {
     font-family: "Avenir Roman", "Proxima Monteverde", sans-serif;
 /*    font-size: calc(var(--sidebar-width) / 8);*/
     font-size: var(--name-size);
+/*    margin-bottom: var(--subtitle-gap);*/
+    margin-bottom: 13px; /* var(--subtitle-gap) */
 /*    font-size: clamp(28px, 2.5vw, 38px);*/
 }
 
@@ -69,7 +71,7 @@ a#name-logo {
     padding: 0;
 /*    height: 60px;*/
 /*    height: fit-content;*/
-    height: 68px;
+    height: 66px; /* 68px */
 /*    height:     */
 }
 a#name-logo > div {
@@ -120,14 +122,74 @@ name-wrap::first-line {
     color: red;
 }
 */
+
 div#sidebar-sub {
-    font-size: 80%;
+    font-size: calc(1em - 6px);
+/*    line-height: 100%;*/
+    height: calc(3em + 6px);
+    
+/*    line-height: 100%;*/
+/*    line-height: 1.2em;*/
+/*
+    --eq-height-pct: 32%;
+    --eq-height-raw: calc(var(--eq-height-pct) * 1);
+    --eq-height: calc(((var(--eq-height-raw) ) * var(--int)) / var(--int));
+*/
+/*    height: 4em;*/
+/*    justify-content: space-between;*/
+    --div-height: 32%;
+    --v-padding: calc((100% - (3 * var(--div-height))) / 2);
+/*    margin: var(--v-margin) 0;*/
+/*    padding: var(--v-padding) 0;*/
+/*    --v-margin: calc(var(--subtitle-gap) - var(--v-padding));*/
+/*    margin: calc(var(--subtitle-gap) - var(--v-padding)) 0;*/
+/*
+    margin-top: var(--v-padding); 
+    margin-bottom: 2%;
+*/
+    
 }
+div#sidebar-sub > div {
+/*    margin: auto;*/
+/*    margin: auto; */
+    display: inline-block;
+    top: auto; bottom: auto;
+/*    height: calc(100% / 3);*/
+    height: 1em;
+/*    display: inline-block;*/
+/*    background: green;*/
+/*    height: min-content;*/
+    
+/*    height: calc(100% / 3);*/
+    
+    line-height: 100%;
+}
+/*
+div#sidebar-sub > div#sb-s-2 {
+    height: var(--v-padding);  line-height: 100%;
+}
+div#sidebar-sub > div#sb-s-3 {
+    height: var(--v-margin);  line-height: 100%;
+}
+*/
+/*
+div.eq-height {
+    height: var(--eq-height);
+    line-height: var(--eq-height-raw);
+}
+*/
+/*
+div#sidebar-sub > div {
+    height: var(--div-height); 
+    line-height: 100%;
+}
+*/
 hr.sidebar, div.sidebar-line {
 /*    width: 90%;*/
 /*    width: clamp();*/
 /*    width: 23vw;*/
-    margin: var(--hr-space) auto;
+/*    margin: var(--hr-space) auto;*/
+    margin: 1px auto;
     width: min(94%, 240px) !important;
 /*    height: 2px;*/
     height: 0.1em;

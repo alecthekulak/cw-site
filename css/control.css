@@ -15,7 +15,9 @@
     --sidebar-width: clamp(240px, 25vw, 300px);
     --sidebar-top: 7vh; /* 7vh */
     --logo-sides: 5%;
-    --hr-space: 12px;
+/*    --subtitle-gap: 10px;*/
+/*    --subtitle-gap: 0.8em;*/
+/*    --hr-space: 11px;*/
     
     
     /* Font Sizes */ 
@@ -26,8 +28,18 @@
     --logo-color-old: hsl(180, 0%, 15%);
     --menu-text: hsl(0, 0, 90%);
 	
-    
+    /* --------------------------------- */
+    /* Hacks */
+    /* Rounding / Significant Figures */
+    --2sf: 4.9406564584124654e-322;
+    --1sf: 4.9406564584124654e-323;
+    --int: 4.9406564584124654e-324;
+/*    --int: 4.9406564584124654e-325;*/
 }
+body div {
+    vertical-align: middle;
+}
+
 body#fake {
 	/* For testing only */
 	/* Name / Logo */
